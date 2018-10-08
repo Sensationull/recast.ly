@@ -4,9 +4,9 @@ import VideoListEntry from './VideoListEntry.js';
 var VideoList = (props) => (
   // console.log(props)
   <div className="video-list">
-    {props.data.map(item =>
-      <VideoListEntry />
-    )}
+    {props.videos.map(item =>
+      <VideoListEntry video= {item}/>
+    )} 
   </div>
 );
 
